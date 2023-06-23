@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Name = () => {
   return (
-    <div className="grid grid-cols-4 opacity-60 gap-y-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 opacity-60 gap-y-4">
       <motion.svg
         key={"j"}
         initial={{ opacity: 1 }}
@@ -82,8 +82,8 @@ const Name = () => {
           stroke="white"
         />
       </motion.svg>
-      <div></div>
-      <div></div>
+      <div className="hidden md:block"></div>
+      <div className="hidden md:block"></div>
       <motion.svg
         key={"d"}
         initial={{ opacity: 1 }}

@@ -67,20 +67,18 @@ const Navbar = () => {
               Contact
             </NavLink>
           </ul>
-          <div className="nav-footer">
-            <div className="location">
-              <span>Port of Spain, Trinidad</span>
+          <div className="absolute bottom-0 pb-[.5em] px-[.7em] font-bold left-0 flex items-center justify-between w-full text-black uppercase">
+            <div className="">
+              <li className="">Port of Spain, Trinidad</li>
             </div>
-            <div className="nav-social-media">
-              <ul>
-                <li>
-                  <a href="#">Instagram</a>
-                </li>
-                <li>
-                  <a href="#">Twitter</a>
-                </li>
-              </ul>
-            </div>
+            <ul className="flex gap-x-4">
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
