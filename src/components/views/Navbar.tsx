@@ -7,70 +7,6 @@ const staggerMenuItems = stagger(0.15, { startDelay: 0.2 });
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [cursorText, setCursorText] = useState("");
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  const ref = React.useRef(null);
-  const mouse = useMouse(ref, {
-    enterDelay: 100,
-    leaveDelay: 100,
-  });
-
-  let mouseXPosition: number = 0;
-  let mouseYPosition: number = 0;
-
-  if (mouse.x !== null) {
-    mouseXPosition = mouse.clientX;
-  }
-
-  if (mouse.y !== null) {
-    mouseYPosition = mouse.clientY;
-  }
-
-  const variants = {
-    default: {
-      opacity: 1,
-      height: 14,
-      width: 14,
-      zIndex: 999,
-      border: `1px solid ${navOpen ? "black" : "white"}`,
-      borderRadius: "100%",
-      fontSize: "16px",
-      x: mouseXPosition,
-      y: mouseYPosition,
-      transition: {
-        type: "spring",
-        mass: 0.6,
-      },
-    },
-    project: {
-      opacity: 1,
-      // backgroundColor: "rgba(255, 255, 255, 0.6)",
-      backgroundColor: "#fff",
-      color: "#000",
-      height: 80,
-      width: 80,
-      fontSize: "18px",
-      x: mouseXPosition - 32,
-      y: mouseYPosition - 32,
-    },
-    contact: {
-      opacity: 1,
-      backgroundColor: "#FFBCBC",
-      color: "#000",
-      height: 64,
-      width: 64,
-      fontSize: "32px",
-      x: mouseXPosition - 48,
-      y: mouseYPosition - 48,
-    },
-  };
-
-  const spring = {
-    type: "spring",
-    stiffness: 500,
-    damping: 28,
-  };
 
   useEffect(() => {
     animate(
@@ -84,15 +20,7 @@ const Navbar = () => {
   }, [navOpen]);
 
   return (
-    <nav className="nav" ref={ref}>
-      <motion.div
-        variants={variants}
-        className="circle"
-        animate={cursorVariant}
-        transition={spring}
-      >
-        <span className="cursorText">{cursorText}</span>
-      </motion.div>
+    <nav className="nav">
       <div className="nav-container">
         <div className="navbar">
           <Link href={"/"} onClick={() => setNavOpen(false)}>
