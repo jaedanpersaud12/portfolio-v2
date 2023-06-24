@@ -1,5 +1,5 @@
 # My Portfolio🔥
-Built with Next.js 13.4, framer-motion and TailwindCSS 
+Built with Typescript, Next.js 13.4, framer-motion and TailwindCSS 
 
 ## Getting Started
 
