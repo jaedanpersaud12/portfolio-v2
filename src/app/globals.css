@@ -13,6 +13,7 @@
   --primarybutton: #3c4e3f;
   --secondarybutton: #ffffff;
   --accent: #a3b18a;
+  --safia: #181818;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +25,7 @@
     --primarybutton: #3c4e3f;
     --secondarybutton: #ffffff;
     --accent: #a3b18a;
+    --safia: #181818;
   }
 }
 
