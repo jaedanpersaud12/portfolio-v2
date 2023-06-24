@@ -28,7 +28,12 @@ export const Letter = ({ letter }: LetterProps) => {
       initial={{ opacity: 1 }}
       animate={{
         opacity: [1, 0, 1],
-        transition: { delay: letter.animate.delay, duration: 1.5 },
+        transition: {
+          delay: letter.animate.delay,
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 4,
+        },
       }}
       width="180"
       height="180"

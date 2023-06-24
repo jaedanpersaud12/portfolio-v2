@@ -1,5 +1,6 @@
 "use client";
-import { animate, stagger } from "framer-motion";
+import useAnimateIn from "@/app/hooks/useAnimateIn";
+import { animate, stagger, motion } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -7,7 +8,11 @@ const staggerMenuItems = stagger(0.15, { startDelay: 0.2 });
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-
+  const {
+    ref: introRef,
+    ctrls: introCtrls,
+    vars: introVars,
+  } = useAnimateIn({ delay: 0.25 });
   useEffect(() => {
     animate(
       "li",
@@ -23,18 +28,29 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav-container">
         <div className="navbar">
-          <Link href={"/"} onClick={() => setNavOpen(false)}>
-            <div
-              className={`${
-                navOpen
-                  ? "bg-background text-accent"
-                  : "bg-accent text-background"
-              } flex items-center justify-center pt-2 text-3xl transition-all duration-200 rounded-full w-14 h-14 hover:scale-110 cursor-pointer font-alchadera`}
-            >
-              JP
-            </div>
-          </Link>
-          <div
+          <motion.div
+            ref={introRef}
+            initial="hidden"
+            animate={introCtrls}
+            variants={introVars}
+          >
+            <Link href={"/"} onClick={() => setNavOpen(false)}>
+              <div
+                className={`${
+                  navOpen
+                    ? "bg-background text-accent"
+                    : "bg-accent text-background"
+                } flex items-center justify-center pt-2 text-3xl transition-all duration-200 rounded-full w-14 h-14 hover:scale-110 cursor-pointer font-alchadera`}
+              >
+                JP
+              </div>
+            </Link>
+          </motion.div>
+          <motion.div
+            ref={introRef}
+            initial="hidden"
+            animate={introCtrls}
+            variants={introVars}
             className="cursor-pointer menu-toggle"
             onClick={() => setNavOpen(!navOpen)}
           >
@@ -50,7 +66,7 @@ const Navbar = () => {
                 } bg-text`}
               ></span>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div
           className="nav-overlay"

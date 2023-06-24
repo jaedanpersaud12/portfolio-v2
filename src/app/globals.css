@@ -8,8 +8,8 @@
 :root {
   --text: #000000;
   --background: #e9e8e2;
-  --backgroundDots: hsla(81, 20%, 20%, 0.25);
-  --backgroundDotsBack: hsla(81, 20%, 20%, 0.1);
+  --backgroundDots: hsla(81, 20%, 20%, 0.5);
+  --backgroundDotsBack: hsla(81, 20%, 20%, 0.3);
   --primarybutton: #3c4e3f;
   --secondarybutton: #ffffff;
   --accent: #a3b18a;
@@ -52,6 +52,7 @@
 .nav {
   position: fixed;
   z-index: 2;
+  height: 120px;
 }
 
 .navbar {
@@ -66,8 +67,6 @@
 }
 .nav-overlay {
   background: var(--accent);
-  opacity: 80%;
-  background-blend-mode: lighten;
   position: fixed;
   z-index: -2;
   top: -100%;

@@ -1,14 +1,16 @@
 import Name from "@/components/assets/Name";
-import TypeAnimationComponent from "@/components/atoms/TypeAnimation";
+import Introduction from "@/components/atoms/Introduction";
+import HomePortfolioItem from "@/components/views/HomePortfolioItem";
+import PageLayout from "@/components/views/PageLayout";
 
 export default function Home() {
   return (
-    <main className="pt-32 md:pt-56">
-      <div className="flex items-center justify-center">
+    <PageLayout>
+      <div className="flex flex-col items-center justify-center pt-24">
         <Name />
       </div>
-
-      <TypeAnimationComponent />
-    </main>
+      <Introduction />
+      <HomePortfolioItem />
+    </PageLayout>
   );
 }
