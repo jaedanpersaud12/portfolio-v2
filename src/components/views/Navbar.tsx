@@ -2,6 +2,7 @@
 import { animate, stagger } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+
 const staggerMenuItems = stagger(0.15, { startDelay: 0.2 });
 
 const Navbar = () => {
@@ -101,7 +102,7 @@ type NavLinkProps = {
 
 const NavLink = ({ children, href, navOpen }: NavLinkProps) => {
   return (
-    <li className="font-alchadera text-[6em]">
+    <li className="font-alchadera text-[3.4em] md:text-[4.6em] lg:text-[6em]">
       <Link href={href}>{children}</Link>
       <div className="nav-item-wrapper"></div>
     </li>

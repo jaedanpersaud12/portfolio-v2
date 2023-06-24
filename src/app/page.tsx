@@ -1,4 +1,5 @@
 import Name from "@/components/assets/Name";
+import TypeAnimationComponent from "@/components/atoms/TypeAnimation";
 
 export default function Home() {
   return (
@@ -6,9 +7,8 @@ export default function Home() {
       <div className="flex items-center justify-center">
         <Name />
       </div>
-      <div className="absolute bottom-0 left-0 p-10 uppercase text-text">
-        In Progress...
-      </div>
+
+      <TypeAnimationComponent />
     </main>
   );
 }

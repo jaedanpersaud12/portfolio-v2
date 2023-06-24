@@ -12,8 +12,8 @@ const Name = () => {
           opacity: [1, 0, 1],
           transition: { delay: 3 },
         }}
-        width="212"
-        height="212"
+        width="180"
+        height="180"
         viewBox="0 0 212 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,6 @@ const Name = () => {
           strokeDasharray="0 1"
           d="M97.9329 211C78.2134 211 58.8354 206.992 39.7988 198.976C22.8963 191.872 11.5 181.852 5.60976 168.918C2.53659 162.178 1 155.437 1 148.697C1 139.042 6.5061 131.562 17.5183 123.557C22.7256 120.278 29.939 118.638 39.1585 118.638C49.6585 118.638 62.6768 120.733 78.2134 124.923C70.7866 139.679 67.0732 152.158 67.0732 162.36C67.0732 169.373 68.7805 175.294 72.1951 180.122C80.3049 191.781 88.2012 197.61 95.8841 197.61C98.6158 197.61 101.348 196.881 104.079 195.424C109.287 192.509 114.024 180.896 118.293 160.584C120.768 148.924 122.006 135.125 122.006 119.185C122.006 107.435 120.854 89.8093 118.549 66.309C116.244 42.7176 108.433 20.9479 95.1158 1L211 1.40989C208.61 7.14834 206.091 19.7638 203.445 39.2563C200.799 58.7488 199.476 86.849 199.476 123.557C199.476 148.606 191.707 168.554 176.171 183.401C160.634 198.157 140.146 207.038 114.707 210.043C109.073 210.681 103.482 211 97.9329 211Z"
           className="stroke-text"
-          stroke-width="0.4"
         />
       </motion.svg>
 
@@ -39,8 +38,8 @@ const Name = () => {
         key={"a"}
         initial={{ opacity: 1 }}
         animate={{ opacity: [1, 0, 1], transition: { delay: 3.2 } }}
-        width="212"
-        height="212"
+        width="180"
+        height="180"
         viewBox="0 0 212 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +63,8 @@ const Name = () => {
         key={"e"}
         initial={{ opacity: 1 }}
         animate={{ opacity: [1, 0, 1], transition: { delay: 3.4 } }}
-        width="212"
-        height="212"
+        width="180"
+        height="180"
         viewBox="0 0 212 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +94,8 @@ const Name = () => {
           opacity: [1, 0, 1],
           transition: { delay: 3.2 },
         }}
-        width="212"
-        height="212"
+        width="180"
+        height="180"
         viewBox="0 0 212 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +119,8 @@ const Name = () => {
         key={"a2"}
         initial={{ opacity: 1 }}
         animate={{ opacity: [1, 0, 1], transition: { delay: 3.4 } }}
-        width="212"
-        height="212"
+        width="180"
+        height="180"
         viewBox="0 0 212 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -142,17 +141,17 @@ const Name = () => {
         />
       </motion.svg>
       <motion.svg
-        key={"e"}
+        key={"n"}
         initial={{ opacity: 1 }}
         animate={{ opacity: [1, 0, 1], transition: { delay: 3.6 } }}
-        width="212"
-        height="212"
+        width="180"
+        height="180"
         viewBox="0 0 212 212"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.path
-          key={"ePath"}
+          key={"nPath"}
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1.2 }}
           transition={{
