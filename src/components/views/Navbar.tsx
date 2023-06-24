@@ -11,7 +11,7 @@ const Navbar = () => {
   useEffect(() => {
     animate(
       "li",
-      navOpen ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.3 },
+      navOpen ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1 },
       {
         duration: 0.2,
         delay: navOpen ? staggerMenuItems : 0,
@@ -67,16 +67,16 @@ const Navbar = () => {
               Contact
             </NavLink>
           </ul>
-          <div className="absolute bottom-0 pb-[.5em] px-[.7em] font-bold left-0 flex items-center justify-between w-full text-black uppercase">
-            <div className="">
+          <div className="absolute bottom-0 pb-[.5em] px-[1em] font-semibold left-0 flex items-center justify-between w-full text-black uppercase">
+            <div className="list-none">
               <li className="">Port of Spain, Trinidad</li>
             </div>
-            <ul className="flex gap-x-4">
-              <li>
-                <a href="#">Instagram</a>
+            <ul className="flex gap-x-6">
+              <li className="transition-all duration-200 hover:underline underline-offset-4">
+                <Link href="https://twitter.com/ja3danp">Twitter</Link>
               </li>
-              <li>
-                <a href="#">Twitter</a>
+              <li className="transition-all duration-200 hover:underline underline-offset-4">
+                <Link href="https://github.com/jaedanpersaud12">Github</Link>
               </li>
             </ul>
           </div>
