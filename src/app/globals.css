@@ -66,6 +66,8 @@
 }
 .nav-overlay {
   background: var(--accent);
+  opacity: 80%;
+  background-blend-mode: lighten;
   position: fixed;
   z-index: -2;
   top: -100%;
@@ -122,6 +124,7 @@
 .hamBox:hover > .lineTop {
   background-color: white;
 }
+
 .hamBox:hover > .lineBottom {
   background-color: white;
 }
@@ -131,6 +134,7 @@
   background-color: white;
   transform: rotate(135deg);
 }
+
 .lineBottom.spin {
   bottom: 1.55em;
   background-color: white;
