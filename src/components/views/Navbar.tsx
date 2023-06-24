@@ -26,7 +26,9 @@ const Navbar = () => {
           <Link href={"/"} onClick={() => setNavOpen(false)}>
             <div
               className={`${
-                navOpen ? "bg-background text-text" : "bg-text text-background"
+                navOpen
+                  ? "bg-background text-accent"
+                  : "bg-accent text-background"
               } flex items-center justify-center pt-2 text-3xl transition-all duration-200 rounded-full w-14 h-14 hover:scale-110 cursor-pointer font-alchadera`}
             >
               JP
@@ -39,9 +41,13 @@ const Navbar = () => {
             <div
               className={navOpen ? "hamBox hamBoxOpen" : "hamBox hamBoxClosed"}
             >
-              <span className={navOpen ? "lineTop spin" : "lineTop"}></span>
               <span
-                className={navOpen ? "lineBottom spin" : "lineBottom"}
+                className={`${navOpen ? "lineTop spin" : "lineTop"}  bg-text`}
+              ></span>
+              <span
+                className={`${
+                  navOpen ? "lineBottom spin" : "lineBottom"
+                } bg-text`}
               ></span>
             </div>
           </div>
@@ -67,7 +73,7 @@ const Navbar = () => {
               Contact
             </NavLink>
           </ul>
-          <div className="absolute bottom-0 pb-[.5em] px-[1em] font-semibold left-0 flex items-center justify-between w-full text-black uppercase">
+          <div className="absolute bottom-0 pb-[.5em] px-[1em] font-semibold left-0 flex items-center justify-between w-full text-background uppercase">
             <div className="list-none">
               <li className="">Port of Spain, Trinidad</li>
             </div>
