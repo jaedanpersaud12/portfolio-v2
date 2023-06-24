@@ -1,6 +1,5 @@
 "use client";
-import useMouse from "@react-hook/mouse-position";
-import { animate, stagger, motion } from "framer-motion";
+import { animate, stagger } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 const staggerMenuItems = stagger(0.15, { startDelay: 0.2 });
