@@ -16,7 +16,7 @@ const Introduction = () => {
     threshold: 0.5,
   });
   return (
-    <motion.div className="max-w-3xl py-10 px-44 text-text">
+    <motion.div className="max-w-3xl px-20 pt-28 md:py-10 md:px-44 text-text">
       <Parallax speed={8} easing={"easeOutQuad"}>
         <motion.div
           ref={introRef}

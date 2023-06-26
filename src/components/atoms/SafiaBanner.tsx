@@ -5,7 +5,7 @@ type Props = {};
 const SafiaBanner = (props: Props) => {
   return (
     <svg
-      width="500"
+      width="200"
       height="143"
       viewBox="0 0 500 143"
       fill="none"

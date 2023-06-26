@@ -9,22 +9,22 @@ type Props = {};
 
 const HomePortfolioItem = (props: Props) => {
   return (
-    <div className="relative w-full">
-      <Parallax
-        speed={10}
-        className="absolute right-[6em] top-[30%]"
-        style={{ zIndex: 11 }}
-      >
+    <div className="relative w-full py-20">
+      <div className="grid grid-cols-2 gap-4 px-20" style={{ zIndex: 10 }}>
+        <div className="grid gap-4 h-[600px]">
+          <HomeProject delay={0} />
+          <HomeProject delay={0.2} />
+        </div>
+        <HomeProject delay={0.4} />
+      </div>
+      {/* <Parallax speed={10} style={{ zIndex: 11 }}>
         <TitleAnimation text="SAFIA ELENA" />
         <TitleAnimation text="PORTFOLIO" />
         <PortfolioDescription
           className="max-w-[450px]"
           text="Portfolio website for SAFIA-ELENA, a fashion consultancy company based here in T&T"
         />
-      </Parallax>
-      <div style={{ zIndex: 10 }}>
-        <HomeProject />
-      </div>
+      </Parallax> */}
     </div>
   );
 };

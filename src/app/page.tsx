@@ -6,7 +6,7 @@ import PageLayout from "@/components/views/PageLayout";
 export default function Home() {
   return (
     <PageLayout>
-      <div className="flex flex-col items-center justify-center pt-24">
+      <div className="flex flex-col items-center justify-center md:pt-24">
         <Name />
       </div>
       <Introduction />
