@@ -1,6 +1,6 @@
 "use client";
 import useAnimateIn from "@/app/hooks/useAnimateIn";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Link from "next/link";
 import SafiaBanner from "../atoms/SafiaBanner";
 import Wordmark from "../atoms/Wordmark";

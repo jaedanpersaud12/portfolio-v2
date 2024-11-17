@@ -1,6 +1,6 @@
 "use client";
 import useAnimateIn from "@/app/hooks/useAnimateIn";
-import { animate, stagger, motion } from "framer-motion";
+import { animate, stagger, motion } from "motion/react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 

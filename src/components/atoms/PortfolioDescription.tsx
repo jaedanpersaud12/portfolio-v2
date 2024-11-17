@@ -1,6 +1,6 @@
 "use client";
 import useAnimateIn from "@/app/hooks/useAnimateIn";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import React from "react";
 
 const PortfolioDescription = ({
