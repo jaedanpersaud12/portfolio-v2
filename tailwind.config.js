@@ -18,6 +18,8 @@ module.exports = {
         "primary-button": "var(--primarybutton)",
         "secondary-button": "var(--secondarybutton)",
         accent: "var(--accent)",
+        "dots-front": "var(--backgroundDots)",
+        "dots-back": "var(--backgroundDotsBack)",
       },
       fontFamily: {
         alchadera: ["Alchadera", "sans-serif"],
